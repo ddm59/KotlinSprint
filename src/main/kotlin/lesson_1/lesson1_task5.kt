@@ -2,11 +2,13 @@ package org.example.lesson_1
 
 fun main() {
 
-    val secondsInSpace: Int = 6480
+    val timeInSpaceInSeconds: Int = 6480
+    val secondsInSpace: Int = timeInSpaceInSeconds % 60
+    val minutesInSpace: Int = (timeInSpaceInSeconds / 60) % 60
+    val hoursInSpace: Int = timeInSpaceInSeconds / 3600
 
-    println(
-        "Время проведенное в космосе: " + String.format(
-            "%02d:%02d:%02d", secondsInSpace / 3600, (secondsInSpace % 3600) / 60, secondsInSpace % 60
-        )
-    )
+
+    println(String.format(
+            "Время проведенное в космосе: %02d:%02d:%02d", hoursInSpace,  minutesInSpace, secondsInSpace))
+
 }
