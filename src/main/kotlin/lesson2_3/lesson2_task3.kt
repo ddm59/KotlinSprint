@@ -1,10 +1,14 @@
 package org.example.lesson2_3
 
-fun main(){
-    var departureTime: Int = (9*60+39)
-    var travelTime: Int = 457
-    var arrivalHour: Int = (departureTime+travelTime)/60
-    var arrivalMinute: Int = (departureTime+travelTime)%60
+const val MINUTES_IN_HOUR: Int = 60
 
-    println("Время прибытя поезда: "+String.format("%02d:%02d", arrivalHour, arrivalMinute))
+fun main(){
+    var startHour: Int = 9
+    var startMinute: Int = 39
+    var travelTimeInMinutes: Int = 457
+    var departureTime: Int = (startHour* MINUTES_IN_HOUR+startMinute)
+    var arrivalHour: Int = (departureTime+travelTimeInMinutes)/MINUTES_IN_HOUR
+    var arrivalMinute: Int = (departureTime+travelTimeInMinutes)%MINUTES_IN_HOUR
+
+    println("Время прибытия поезда: "+String.format("%02d:%02d", arrivalHour, arrivalMinute))
 }
