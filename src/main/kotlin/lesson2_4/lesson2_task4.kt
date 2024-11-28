@@ -1,13 +1,20 @@
 package org.example.lesson2_4
 
 fun main() {
-    var crystalOre: Int = 7
-    var ironOre: Int = 11
-    var percentModifier: Float = 0.2f
+
+    var crystalOre = 7
+    var ironOre = 11
+    var percentModifier = 20
+
+
+    var crystalOreBuff = (crystalOre * (percentModifier.toFloat() / 100)).toInt()
+    var ironOreBuff = (ironOre * (percentModifier.toFloat() / 100)).toInt()
+
+
     println("Колличество добытых ресурсов: ")
     println("----Кристалическая руда: $crystalOre")
     println("----Железная руда: $ironOre")
     println("Бафф +20% к добытым ресурсам: ")
-    println("----Кристалическая руда: " + (crystalOre * percentModifier).toInt())
-    println("----Железная руда: " + (ironOre * percentModifier).toInt())
+    println("----Кристалическая руда: $crystalOreBuff")
+    println("----Железная руда: $ironOreBuff")
 }
