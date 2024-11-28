@@ -3,9 +3,12 @@ package org.example.lesson_3
 fun main() {
     var nameData = "Дмитрий"
     var timeData = "день"
+
     println(userGreetings(nameData, timeData))
+
     nameData = "Олег"
     timeData = "вечер"
+
     println(userGreetings(nameData, timeData))
 }
 
