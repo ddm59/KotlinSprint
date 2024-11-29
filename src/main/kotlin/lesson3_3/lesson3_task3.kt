@@ -1,10 +1,11 @@
 package org.example.lesson3_3
 
-fun main(){
+fun main() {
 
-    var  number = 9
+    var number = 9
 
-    println("""
+    println(
+        """
                 | $number x 1 = ${number * 1}
                 | $number x 2 = ${number * 2}
                 | $number x 3 = ${number * 3}
@@ -15,5 +16,6 @@ fun main(){
                 | $number x 8 = ${number * 8}
                 | $number x 9 = ${number * 9}
                 
-    """.trimMargin())
+    """.trimMargin()
+    )
 }
