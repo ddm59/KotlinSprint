@@ -8,19 +8,13 @@ fun main() {
 
     var cargoWeight = 20
     var cargoVolume = 80
-
-    println(
-        "Груз с весом $cargoWeight кг и объемом $cargoVolume л соответствует категории \"Average\":" +
-                " ${((cargoWeight > MIN_WEIGHT) && (cargoWeight <= MAX_WEIGHT)) && (cargoVolume < MAX_VOLUME)}"
-    )
+    var checkResult = ((cargoWeight > MIN_WEIGHT) && (cargoWeight <= MAX_WEIGHT)) && (cargoVolume < MAX_VOLUME)
+    println("Груз с весом $cargoWeight кг и объемом $cargoVolume л соответствует категории \"Average\": $checkResult")
 
     cargoWeight = 50
     cargoVolume = 100
-
-    println(
-        "Груз с весом $cargoWeight кг и объемом $cargoVolume л соответствует категории \"Average\":" +
-                " ${((cargoWeight > MIN_WEIGHT) && (cargoWeight <= MAX_WEIGHT)) && (cargoVolume < MAX_VOLUME)}"
-    )
+    checkResult = ((cargoWeight > MIN_WEIGHT) && (cargoWeight <= MAX_WEIGHT)) && (cargoVolume < MAX_VOLUME)
+    println("Груз с весом $cargoWeight кг и объемом $cargoVolume л соответствует категории \"Average\": $checkResult" )
 
 
 }
