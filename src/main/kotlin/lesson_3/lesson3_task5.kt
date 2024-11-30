@@ -1,4 +1,4 @@
-package org.example.lesson3_5
+package org.example.lesson_3
 
 fun main() {
     val moveData = "D2-D4;0"
