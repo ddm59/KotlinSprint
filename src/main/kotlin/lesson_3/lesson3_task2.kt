@@ -1,4 +1,4 @@
-package org.example.lesson3_2
+package org.example.lesson_3
 
 fun main() {
     var personSurname = "Андреева"
