@@ -11,7 +11,8 @@ fun main() {
     var tentCheck = REQUIRED_TENT_POSSITION == "открыт"
     var currentHumidity = 20
     var currentSeason = "зима"
+    var conditionCheck = weatherCheck && tentCheck && (currentHumidity == REQUIRED_HUMIDITY) && (currentSeason != BAD_SEASON)
 
-    print("Благоприятные ли условия сейчас для роста бобовых? ")
-    println(weatherCheck && tentCheck && (currentHumidity == REQUIRED_HUMIDITY) && (currentSeason != BAD_SEASON))
+    println("Благоприятные ли условия сейчас для роста бобовых?: $conditionCheck")
+
 }
