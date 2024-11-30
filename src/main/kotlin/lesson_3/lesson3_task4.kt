@@ -1,4 +1,4 @@
-package org.example.lesson3_4
+package org.example.lesson_3
 
 fun main() {
     var moveNumber = 0
