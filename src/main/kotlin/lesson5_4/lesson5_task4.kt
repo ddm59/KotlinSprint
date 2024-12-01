@@ -24,9 +24,10 @@ const val SUCCESS_AUTH: String = """
     -Надеюсь, вам понравится пребывание здесь больше, чем мне.
     
 """
+
 fun main() {
-    var newUserLogin: String =""
-    var newUserPassword: String =""
+    var newUserLogin: String = ""
+    var newUserPassword: String = ""
     var currentUserLogin: String = ""
     var currentUserPassword: String = ""
 
@@ -36,9 +37,9 @@ fun main() {
     print("Пароль:  ")
     currentUserPassword = readln()
 
-    when{
-        (currentUserLogin==USER_LOGIN && currentUserPassword==USER_PASSWORD) -> println(SUCCESS_AUTH.trimMargin())
-        (currentUserLogin!=USER_LOGIN) -> {
+    when {
+        (currentUserLogin == USER_LOGIN && currentUserPassword == USER_PASSWORD) -> println(SUCCESS_AUTH.trimMargin())
+        (currentUserLogin != USER_LOGIN) -> {
             print("Пользователь не зарегестрирован.\nНеобходимо пройти процедуру регистрации...\nВведите имя пользователя: ")
             newUserLogin = readln()
             print("Отлично.\n Введите пароль: ")
