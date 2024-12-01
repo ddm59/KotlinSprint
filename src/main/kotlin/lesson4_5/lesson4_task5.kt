@@ -1,24 +1,24 @@
 package org.example.lesson4_5
 
+const val REQUIRED_CREW: Int = 70
+const val MIN_REQUIRED_CREW: Int = 55
+const val REQUIRED_PROVISION: Int = 50
+
 fun main() {
 
     println("\nДиагностика корабля. Требуется ввести текущие данные: \n")
-    //Не до конца понял как правильно осуществить провверку на ввод значений оперируя текущими вводными данными
-    // так как по идее мы еще не прошли условные операторы сделал через ?:  чтоб хотя бы избежать ввода пустых значений
-    // в идеале нужно проверять ввод на корректный ввод
-    // возможно не верно понял ТЗ.
     print("Наличие повреждений на корабле?  (true\\false ) :   ")
-    var shipDamage = readlnOrNull() ?: "true"
+    var shipDamage = readln().toBoolean()
     print("Колличество экипажа на кобале. (кол-во человек) :   ")
-    var shipCrew = readlnOrNull() ?: "0"
+    var shipCrew = readln().toInt()
     print("Количесво провизии на корабле (кол-во шт.) :   ")
-    var shipProvision = readlnOrNull() ?: "0"
+    var shipProvision = readln().toInt()
     print("Наличие благоприятной погоды (true\\false ):   ")
-    var weather = readlnOrNull() ?: "false"
+    var weather = readln().toBoolean()
 
     var isReadyForSail =
-        (!shipDamage.toBoolean() && (shipCrew.toInt() >= 55 && shipCrew.toInt() <= 70) && (shipProvision.toInt() > 50) && weather.toBoolean())
-                || ((shipCrew.toInt() == 70) && (shipProvision.toInt() >= 50) && weather.toBoolean())
+        (!shipDamage&& (shipCrew>= MIN_REQUIRED_CREW && shipCrew<= REQUIRED_CREW) && (shipProvision> REQUIRED_PROVISION) && weather)
+                || ((shipCrew== REQUIRED_CREW) && (shipProvision >= REQUIRED_PROVISION) && weather)
 
     println("Разрешение на отплытие :  $isReadyForSail")
 
