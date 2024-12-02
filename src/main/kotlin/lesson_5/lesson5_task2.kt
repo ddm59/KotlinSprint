@@ -1,4 +1,4 @@
-package org.example.lesson5_2
+package org.example.lesson_5
 
 const val MAJORITY_AGE = 18
 const val CURRENT_YEAR = 2024
