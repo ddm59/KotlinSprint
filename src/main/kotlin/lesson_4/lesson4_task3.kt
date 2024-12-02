@@ -1,4 +1,4 @@
-package org.example.lesson4_3
+package org.example.lesson_4
 //Требуемые значения. неизменяемые константы
 const val REQUIRED_WEATHER: String = "солнечная"
 const val REQUIRED_TENT_POSSITION: String = "открыт"
