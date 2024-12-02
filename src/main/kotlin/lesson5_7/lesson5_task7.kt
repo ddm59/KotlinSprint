@@ -16,7 +16,7 @@ fun main() {
     var tripCost = amountOfFuel * fuelPrice
     println(
         String.format(
-            "Кол-во топлива требуемое на поездку: %.2f литвов\nИтоговая стоимость поездки: %.2f рублей",
+            "Кол-во топлива требуемое на поездку: %.2f л.\nИтоговая стоимость поездки: %.2f р.",
             amountOfFuel,
             tripCost
         )
