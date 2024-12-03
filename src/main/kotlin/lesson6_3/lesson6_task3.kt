@@ -1,7 +1,7 @@
 package org.example.lesson6_3
 
 fun main() {
-    print("Введите кол-во секунд которые нужно засечь")
+    print("Введите кол-во секунд которые нужно засечь: ")
     var timeInSeconds = readln().toInt()
 
     while (--timeInSeconds > 0) {
