@@ -1,4 +1,4 @@
-package org.example.lesson5_5
+package org.example.lesson_5
 
 const val JACKPOT: Int = 3
 const val BIG_PRIZE: Int = 2
