@@ -1,4 +1,4 @@
-package org.example.lesson5_3
+package org.example.lesson_5
 
 const val FIRST_LUCKY_NUMBER: Int = 35
 const val SECOND_LUCKY_NUMBER: Int = 10
