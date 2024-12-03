@@ -1,4 +1,4 @@
-package org.example.lesson4_5
+package org.example.lesson_4
 
 const val REQUIRED_CREW: Int = 70
 const val MIN_REQUIRED_CREW: Int = 55
