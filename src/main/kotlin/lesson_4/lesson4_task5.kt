@@ -3,7 +3,7 @@ package org.example.lesson_4
 const val REQUIRED_CREW: Int = 70
 const val MIN_REQUIRED_CREW: Int = 55
 const val REQUIRED_PROVISION: Int = 50
-const val REQUIRED_WEATHER: String = "good"
+const val REQUIRED_WEATHER_VALUE = "good"
 const val IS_SHIP_DAMAGED: String = "no"
 
 fun main() {
@@ -16,7 +16,7 @@ fun main() {
     print("Количесво провизии на корабле (кол-во шт.) :   ")
     var shipProvision = readln().toInt()
     print("Наличие благоприятной погоды (good\\bad ):   ")
-    var weatherCheck = readln() == REQUIRED_WEATHER
+    var weatherCheck = readln() == REQUIRED_WEATHER_VALUE
 
     var isReadyForSail =
         (shipDamageCheck&& (shipCrew>= MIN_REQUIRED_CREW && shipCrew<= REQUIRED_CREW) && (shipProvision> REQUIRED_PROVISION) && weatherCheck)
