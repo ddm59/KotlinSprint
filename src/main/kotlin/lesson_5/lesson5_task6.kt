@@ -1,4 +1,4 @@
-package org.example.lesson5_6
+package org.example.lesson_5
 
 const val LOWER_BMI_LIMIT = 18.5
 const val MIDDLE_BMI_LIMIT = 25.0
