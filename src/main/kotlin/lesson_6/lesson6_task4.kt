@@ -1,4 +1,4 @@
-package org.example.lesson6_4
+package org.example.lesson_6
 
 const val GREETINGS: String = """
    
