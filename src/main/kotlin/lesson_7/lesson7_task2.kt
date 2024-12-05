@@ -1,6 +1,4 @@
-package org.example.lesson7_2
-
-import kotlin.concurrent.thread
+package org.example.lesson_7
 
 const val AUTH_GREETINGS = "Вы успешно авторизованы!!!\nДобро пожаловать."
 fun main() {
