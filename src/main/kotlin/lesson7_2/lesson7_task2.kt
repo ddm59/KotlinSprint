@@ -7,18 +7,15 @@ fun main() {
     var authCode = 0
     var userCode = 0
 
-    while (true) {
+    do {
         authCode = (1000..9999).random()
+
         println("Ваш код активации: $authCode")
-        Thread.sleep(2000)                     //Добавил просто для имитации времени  ответа
         print("Введите код активации: ")
+
         userCode = readln().toInt()
 
-        if (authCode == userCode) {
-            println(AUTH_GREETINGS)
-            break
-        } else {
-            println("Не верный код")
-        }
-    }
+    } while (authCode != userCode)
+    println(AUTH_GREETINGS)
 }
+
