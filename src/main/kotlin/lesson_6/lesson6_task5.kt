@@ -1,4 +1,4 @@
-package org.example.lesson6_5
+package org.example.lesson_6
 
 const val CAPTCHA_INFO: String = """
     ------------------------------------------------------
