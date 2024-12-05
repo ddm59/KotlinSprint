@@ -1,6 +1,5 @@
-package org.example.lesson6_2
+package org.example.lesson_6
 
-import kotlin.concurrent.thread
 const val SECONDS_IN_MILLISECONDS = 1000
 
 fun main() {
