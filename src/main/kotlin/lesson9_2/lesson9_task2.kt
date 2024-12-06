@@ -2,7 +2,7 @@ package org.example.lesson9_2
 
 fun main() {
 
-    var recipeIngredients = mutableListOf<String>("Хлеб", "Помидоры", "Сыр")
+    var recipeIngredients = mutableListOf("Хлеб", "Помидоры", "Сыр")
     var userAnswer = ""
 
     println("В рецепте есть базовые ингредиенты: $recipeIngredients")
