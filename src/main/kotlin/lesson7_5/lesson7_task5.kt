@@ -9,26 +9,27 @@ const val PWD_GENERATOR_INSTRUCTION: String = """
 fun main() {
     val smallCharRange = 'a'..'z'
     val bigCharRange = 'A'..'Z'
-    val digitRange = 0..9
-    var counter = 0
-    var generatedPwd = ""
+    val digitRange = '0'..'9'
+    var pwdSymbolsPool = mutableListOf<Char>()
+    val generatedPWD = mutableListOf<Char>()
+
+    generatedPWD.add(smallCharRange.random())
+    generatedPWD.add(bigCharRange.random())
+    generatedPWD.add(digitRange.random())
+
+    pwdSymbolsPool.addAll(smallCharRange)
+    pwdSymbolsPool.addAll(bigCharRange)
+    pwdSymbolsPool.addAll(digitRange)
+    pwdSymbolsPool.shuffle()
 
     println(PWD_GENERATOR_INSTRUCTION.trimIndent())
     print("Введите длинну пароля: ")
-
     val pwdLength = readln().toInt()
 
-    for (i in 1..pwdLength) {
-
-        counter = (1..3).random()
-
-        if (counter == 1) {
-            generatedPwd += smallCharRange.random()
-        } else if (counter == 2) {
-            generatedPwd += bigCharRange.random()
-        } else {
-            generatedPwd += digitRange.random()
-        }
+    for (i in 1..pwdLength-3) {
+        generatedPWD.add(pwdSymbolsPool.random())
     }
-    println("Сгенерированный пароль: $generatedPwd")
+
+    generatedPWD.shuffle()
+    println("Сгенерированный пароль: ${generatedPWD.joinToString("")}")
 }
