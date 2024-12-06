@@ -1,4 +1,4 @@
-package org.example.lesson7_4
+package org.example.lesson_7
 
 fun main() {
     print("Введите кол-во засекаемых секунд: ")
