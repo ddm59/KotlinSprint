@@ -1,15 +1,13 @@
 package org.example.lesson_8
 
 fun main(){
-    val advertisingViews: IntArray = intArrayOf(7)
+    val advertisingViews = Array<Int>(7){0}
+    println(advertisingViews.size)
     var weekViews = 0
 
     for (i in 0..6 ){
-        advertisingViews[0] = (50..1000).random()  // Генерация массива с просмотрами
+        advertisingViews[i] = (50..1000).random()
     }
-
-    for (i in advertisingViews){
-        weekViews += i                                  //Подсчет кол-ва просмотров за неделю
-    }
+    weekViews = advertisingViews.sum()
     println("Количество просмотров за неделю: $weekViews")
 }
