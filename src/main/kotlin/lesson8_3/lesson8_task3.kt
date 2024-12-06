@@ -7,7 +7,7 @@ fun main() {
     var ingredientName = readln()
     var ingredientIndex = 0
 
-    if (recipeIngredients.contains(ingredientName)) {
+    if (ingredientName in recipeIngredients) {
 
         ingredientIndex = recipeIngredients.indexOf(ingredientName)
         println("Ингредиент [${recipeIngredients[ingredientIndex]}] в рецепте есть")
