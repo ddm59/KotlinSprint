@@ -1,4 +1,4 @@
-package org.example.lesson5_7
+package org.example.lesson_5
 
 const val FORMULA_DIVISOR = 100
 
