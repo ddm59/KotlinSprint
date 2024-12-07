@@ -1,7 +1,7 @@
 package org.example.lesson8_3
 
 fun main() {
-    val recipeIngredients = arrayOf("Перец", "Помидоры","Чеснок"," Картофель", "Лук", "Говядина")
+    val recipeIngredients = arrayOf("Перец", "Помидоры", "Чеснок", " Картофель", "Лук", "Говядина")
 
     print("Введите название ингредиента для поиска:  ")
     var ingredientName = readln()
@@ -9,7 +9,7 @@ fun main() {
     if (ingredientName in recipeIngredients) {
         println("Ингредиент [${ingredientName}}] в рецепте есть")
 
-    }else{
+    } else {
         println("Такого ингредиента в рецепте нет")
     }
 }
