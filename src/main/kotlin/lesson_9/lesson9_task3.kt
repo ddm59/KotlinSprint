@@ -1,4 +1,4 @@
-package org.example.lesson9_3
+package org.example.lesson_9
 
 fun main() {
     var recipeProportions = listOf(2, 50, 15)
