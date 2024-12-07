@@ -1,4 +1,4 @@
-package org.example.lesson7_5
+package org.example.lesson_7
 
 const val PWD_GENERATOR_INSTRUCTION: String = """
     Введите желаемую длину пароля,
