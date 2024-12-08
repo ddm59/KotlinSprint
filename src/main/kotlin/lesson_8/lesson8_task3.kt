@@ -1,4 +1,4 @@
-package org.example.lesson8_3
+package org.example.lesson_8
 
 fun main() {
     val recipeIngredients = arrayOf("Перец", "Помидоры", "Чеснок", " Картофель", "Лук", "Говядина")
