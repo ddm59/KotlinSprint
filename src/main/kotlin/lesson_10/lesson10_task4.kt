@@ -1,4 +1,4 @@
-package org.example.lesson10_4
+package org.example.lesson_10
 
 fun main() {
     var gameStats = arrayOf(0, 0, 0, 0)
