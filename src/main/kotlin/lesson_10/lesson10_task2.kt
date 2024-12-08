@@ -1,4 +1,4 @@
-package org.example.lesson10_2
+package org.example.lesson_10
 
 const val MIN_PASSWORD_LENGTH = 4
 const val VALIDATION_OK_MSG = "Данные валидны.\nВы успешно зарегистрированы!!!"
