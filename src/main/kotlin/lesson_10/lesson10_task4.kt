@@ -26,13 +26,13 @@ fun main() {
     )
 }
 
-fun diceThrow(): Int = (1..6).random()
+fun diceThrow1(): Int = (1..6).random()
 
 fun diceGame(gameStats: Array<Int>): Array<Int> {
 
-    val humanThrow = diceThrow()
+    val humanThrow = diceThrow1()
     println("Бросок человека: $humanThrow")
-    val computerThrow = diceThrow()
+    val computerThrow = diceThrow1()
     println("Бросок компьютера: $computerThrow")
 
     if (humanThrow > computerThrow) {
