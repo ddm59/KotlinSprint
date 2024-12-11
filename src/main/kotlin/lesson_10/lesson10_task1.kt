@@ -1,8 +1,8 @@
 package org.example.lesson_10
 
 fun main() {
-    val humanThrow = diceThrow()
-    val computerThrow = diceThrow()
+    val humanThrow = diceThrowAct()
+    val computerThrow = diceThrowAct()
 
     println("Бросок человека: $humanThrow")
     println("Бросок компьютера: $computerThrow")
@@ -16,4 +16,4 @@ fun main() {
     }
 }
 
-fun diceThrow(): Int = (1..6).random()
+fun diceThrowAct(): Int = (1..6).random()
