@@ -1,4 +1,4 @@
-package org.example.lesson10_3
+package org.example.lesson_10
 
 fun main() {
     print("Введите требуемую длину пароля: ")
