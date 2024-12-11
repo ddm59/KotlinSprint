@@ -19,3 +19,10 @@ fun main() {
     println("Данные user2")
     println("ID: ${user2.id}\nLogin: ${user2.login}\nPassword: ${user2.password}\nEmail: ${user2.email}")
 }
+
+class User(
+    val id: Int,
+    val login: String,
+    val password: String,
+    val email: String,
+)
