@@ -1,4 +1,4 @@
-package org.example.lesson10_5
+package org.example.lesson_10
 
 const val TOKEN_LENGTH = 32
 const val USER_LOGIN = "User32"
