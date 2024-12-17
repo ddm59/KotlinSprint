@@ -1,4 +1,4 @@
-package org.example.lesson11_4
+package org.example.lesson_11
 
 
 class Ingredient(
