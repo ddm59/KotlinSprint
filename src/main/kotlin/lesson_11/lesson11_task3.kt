@@ -1,4 +1,4 @@
-package org.example.lesson11_3
+package org.example.lesson_11
 
 fun main() {
     val user1 = User(
