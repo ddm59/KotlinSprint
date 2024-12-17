@@ -75,6 +75,4 @@ class User(
     val name: String,
     val icon: String,
     var status: String = "",
-) {
-
-}
+)
