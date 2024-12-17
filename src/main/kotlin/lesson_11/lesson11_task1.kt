@@ -1,14 +1,14 @@
 package org.example.lesson_11
 
 fun main() {
-    val user1 = User(
+    val user1 = User3(
         id = 1,
         login = "looney",
         password = "Qwerty2024",
         email = "looney2024@gmail.com",
     )
 
-    val user2 = User(
+    val user2 = User3(
         id = 2,
         login = "Johny",
         password = "QET123adg!!",
@@ -20,7 +20,7 @@ fun main() {
     println("ID: ${user2.id}\nLogin: ${user2.login}\nPassword: ${user2.password}\nEmail: ${user2.email}")
 }
 
-class User(
+class User3(
     val id: Int,
     val login: String,
     val password: String,
