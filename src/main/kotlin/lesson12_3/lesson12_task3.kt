@@ -7,16 +7,10 @@ fun main() {
     temp.getWeatherInfo()
 }
 
-class TempDaily(dayTemperature: Int, nightTemperature: Int, precipitationExpected: Boolean) {
-    val dayTemperature: Int
-    val nightTemperature: Int
-    val precipitationExpected: Boolean
-
-    init {
-        this.dayTemperature = (dayTemperature.toFloat() + KELVIN_CONSTANT).toInt()
-        this.nightTemperature = (nightTemperature.toFloat() + KELVIN_CONSTANT).toInt()
-        this.precipitationExpected = precipitationExpected
-    }
+class TempDaily(_dayTemperature: Int, _nightTemperature: Int, _precipitationExpected: Boolean) {
+    val dayTemperature = _dayTemperature
+    val nightTemperature = _nightTemperature
+    val precipitationExpected = _precipitationExpected
 
     fun getWeatherInfo() {
         println(
