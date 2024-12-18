@@ -1,4 +1,4 @@
-package org.example.lesson12_2
+package org.example.lesson6_15.lesson_12
 
 fun main() {
     val temp = DailyTemp(35, -1, true)
