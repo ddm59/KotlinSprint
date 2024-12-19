@@ -15,5 +15,5 @@ fun main() {
         PhoneDirectoryEntry("Sarah Johnson", 9988776655, "Health Inc")
     )
     println("\nСуществующие компании:")
-    val companies = phoneBook.map { it.company }.forEach { println(it) }
+    phoneBook.mapNotNull { it.company }.forEach { println(it) }
 }
