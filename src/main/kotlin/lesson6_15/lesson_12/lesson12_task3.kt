@@ -1,4 +1,4 @@
-package org.example.lesson12_3
+package org.example.lesson6_15.lesson_12
 
 const val KELVIN_CONSTANT = 273
 
