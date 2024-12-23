@@ -1,4 +1,4 @@
-package org.example.lesson13_3
+package org.example.lesson6_15.lesson_13
 
 class PhoneDirectoryEntry(
     val name: String,
