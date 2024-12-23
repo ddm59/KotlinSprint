@@ -1,4 +1,4 @@
-package org.example.lesson13_4
+package org.example.lesson6_15.lesson_13
 
 class ContactEntry(
     private val name: String,
