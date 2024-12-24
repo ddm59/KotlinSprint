@@ -6,11 +6,11 @@ fun main() {
     val cargo = Cargo()
     val icebreaker = Icebreaker()
 
-    liner.shipInfo()
+    liner.getInfo()
     liner.startCargoLoading()
-    cargo.shipInfo()
+    cargo.getInfo()
     cargo.startCargoLoading()
-    icebreaker.shipInfo()
+    icebreaker.getInfo()
     icebreaker.startCargoLoading()
 }
 
@@ -21,7 +21,7 @@ class Icebreaker(
     speed = 100,
     capacity = 500,
 ) {
-    override fun shipInfo() {
+    override fun getInfo() {
         println("Модель корабля: $name\nСкорость: $speed км/ч, Грузоподъемность: $capacity тонн, Раскалывание льда: $isBreakingIce")
     }
 
@@ -47,7 +47,7 @@ open class Liner(
     val speed: Int = 250,
     val capacity: Int = 1000,
 ) {
-    open fun shipInfo() {
+    open fun getInfo() {
         println("Модель корабля: $name\nСкорость: $speed км/ч, Грузоподъемность: $capacity тонн")
     }
 
