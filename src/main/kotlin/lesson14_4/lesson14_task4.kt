@@ -2,11 +2,11 @@ package org.example.lesson14_4
 
 fun main() {
     val planet = Planet("Марс", hasAtmosphere = true, suitableForLanding = true)
-    planet.addMoon(Satellite("Фобос", hasAtmosphere = false, suitableForLanding = false))
-    planet.addMoon(Satellite("Деймос", hasAtmosphere = false, suitableForLanding = false))
+    planet.addSatellite(Satellite("Фобос", hasAtmosphere = false, suitableForLanding = false))
+    planet.addSatellite(Satellite("Деймос", hasAtmosphere = false, suitableForLanding = false))
 
     println("Имя планеты:\n${planet.name}")
-    planet.printMoonNames()
+    planet.printSatelliteNames()
 }
 
 class Satellite(
@@ -23,11 +23,11 @@ class Planet(
 
     private val satellites: MutableList<Satellite> = mutableListOf<Satellite>()
 
-    fun addMoon(satellite: Satellite) {
+    fun addSatellite(satellite: Satellite) {
         satellites.add(satellite)
     }
 
-    fun printMoonNames() {
+    fun printSatelliteNames() {
         if (satellites.size > 0) {
             println("Спутники: ")
             satellites.forEach { satellite -> println(satellite.name) }
