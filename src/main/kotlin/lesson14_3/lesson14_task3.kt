@@ -4,7 +4,7 @@ const val  WHITE_COLOR: String = "Белый"
 
 fun main() {
     val figures: List<Figure> = listOf(
-        Circle(WHITE_COLOR, 2.0),
+        Circle(WHITE_COLOR, 3.0),
         Rectangle(BLACK_COLOR, 3.0, 4.0),
         Circle(BLACK_COLOR, 6.0),
         Rectangle(WHITE_COLOR, 8.0, 5.0),
