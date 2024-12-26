@@ -2,12 +2,18 @@ package org.example.lesson14_4
 
 fun main() {
     val planet = Planet("Марс", hasAtmosphere = true, suitableForLanding = true)
-    planet.addMoon(CelestialBody("Фобос", hasAtmosphere = false, suitableForLanding = false))
-    planet.addMoon(CelestialBody("Деймос", hasAtmosphere = false, suitableForLanding = false))
+    planet.addMoon(Satellite("Фобос", hasAtmosphere = false, suitableForLanding = false))
+    planet.addMoon(Satellite("Деймос", hasAtmosphere = false, suitableForLanding = false))
 
     println("Имя планеты:\n${planet.name}")
     planet.printMoonNames()
 }
+
+class Satellite(
+    name: String,
+    hasAtmosphere: Boolean = false,
+    suitableForLanding: Boolean = false,
+) : CelestialBody(name, hasAtmosphere, suitableForLanding)
 
 class Planet(
     name: String,
@@ -15,16 +21,16 @@ class Planet(
     suitableForLanding: Boolean = false,
 ) : CelestialBody(name, hasAtmosphere, suitableForLanding) {
 
-    private val moons: MutableList<CelestialBody> = mutableListOf<CelestialBody>()
+    private val satellites: MutableList<Satellite> = mutableListOf<Satellite>()
 
-    fun addMoon(moon: CelestialBody) {
-        moons.add(moon)
+    fun addMoon(satellite: Satellite) {
+        satellites.add(satellite)
     }
 
     fun printMoonNames() {
-        if (moons.size > 0) {
+        if (satellites.size > 0) {
             println("Спутники: ")
-            moons.forEach { moon -> println(moon.name) }
+            satellites.forEach { satellite -> println(satellite.name) }
         } else {
             println("Спутников нет")
         }
