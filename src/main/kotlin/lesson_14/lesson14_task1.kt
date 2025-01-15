@@ -1,16 +1,16 @@
 package org.example.lesson_14
 
 fun main() {
-    val liner = Liner()
-    val cargo = Cargo()
-    val icebreaker = Icebreaker()
+    val liner = Liner1()
+    val cargo = Cargo1()
+    val icebreaker = Icebreaker1()
 
     liner.getInfo()
     cargo.getInfo()
     icebreaker.getInfo()
 }
 
-class Icebreaker(
+class Icebreaker1(
     val isBreakingIce: Boolean = true,
 ) : Liner(
     name = "Ледокол",
@@ -22,13 +22,13 @@ class Icebreaker(
     }
 }
 
-class Cargo() : Liner(
+class Cargo1() : Liner(
     name = "Грузовой корабль",
     speed = 100,
     capacity = 100000,
 )
 
-open class Liner(
+open class Liner1(
     val name: String = "Лайнер",
     val speed: Int = 250,
     val capacity: Int = 1000,
