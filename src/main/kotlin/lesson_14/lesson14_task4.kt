@@ -1,4 +1,4 @@
-package org.example.lesson14_4
+package org.example.lesson_14
 
 fun main() {
     val planet = Planet("Марс", hasAtmosphere = true, suitableForLanding = true)
