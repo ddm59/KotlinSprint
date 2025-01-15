@@ -1,4 +1,4 @@
-package org.example.lesson14_5
+package org.example.lesson_14
 
 fun main() {
     val chat = Chat()
