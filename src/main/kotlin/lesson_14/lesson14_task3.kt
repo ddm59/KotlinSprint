@@ -1,4 +1,4 @@
-package org.example.lesson14_3
+package org.example.lesson_14
 const val BLACK_COLOR: String = "Черный"
 const val  WHITE_COLOR: String = "Белый"
 
