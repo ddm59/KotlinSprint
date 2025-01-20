@@ -1,4 +1,4 @@
-package org.example.lesson16_3
+package org.example.lesson_16
 
 class User(private val userLogin: String, private val userPassword: String) {
 
