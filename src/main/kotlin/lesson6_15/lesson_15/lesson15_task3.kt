@@ -1,4 +1,4 @@
-package org.example.lesson15_3
+package org.example.lesson_15
 
 abstract class ForumUser(val username: String) {
     abstract fun readForum()
