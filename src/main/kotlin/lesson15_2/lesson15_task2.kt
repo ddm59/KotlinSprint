@@ -5,8 +5,8 @@ abstract class WeatherStationStats {
     abstract val data: Double
 }
 
-class Temperature( val temperature: Double) : WeatherStationStats() {
-    override  val data: Double = temperature
+class Temperature(val temperature: Double) : WeatherStationStats() {
+    override val data: Double = temperature
 }
 
 class PrecipitationAmount(private val precipitation: Double) : WeatherStationStats() {
