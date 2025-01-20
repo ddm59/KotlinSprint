@@ -11,7 +11,7 @@ class Ship(name: String, var averageSpeed: Double, var homePort: String) {
         }
 
     override fun toString(): String {
-        return "Корабль(имя: '$name', средняя скорость: $averageSpeed, порт приписки: '$homePort')"
+        return "Корабль(имя:  '$name', средняя скорость:  $averageSpeed, порт приписки:  '$homePort')"
     }
 }
 
