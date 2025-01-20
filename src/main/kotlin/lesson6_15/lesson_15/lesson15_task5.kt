@@ -1,4 +1,4 @@
-package org.example.Lesson15_5
+package org.example.lesson6_15.lesson_15
 
 interface Movable {
     fun move()
