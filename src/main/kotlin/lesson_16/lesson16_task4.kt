@@ -1,4 +1,4 @@
-package org.example.lesson16_4
+package org.example.lesson_16
 
 class Order(private val orderNumber: Int) {
 
