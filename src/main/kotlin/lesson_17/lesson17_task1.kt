@@ -1,6 +1,6 @@
 package org.example.lesson_17
 
-class QuizElement(question: String, answer: String) {
+class ElementQuiz(question: String, answer: String) {
     var question: String = question
         get() = field
 
