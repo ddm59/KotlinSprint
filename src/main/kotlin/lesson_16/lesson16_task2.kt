@@ -1,4 +1,4 @@
-package org.example.lesson16_2
+package org.example.lesson_16
 
 private const val PI = 3.14
 
