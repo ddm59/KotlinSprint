@@ -1,17 +1,14 @@
 package org.example.lesson17_4
 
 class Package(private val packageNumber: String) {
+    private var movementCounter: Int = 0
+        private set
 
     var currentLocation: String = "Неизвестна"
         set(value) {
             field = value
             movementCounter++
         }
-
-    companion object {
-        var movementCounter: Int = 0
-            private set
-    }
 
     fun displayInfo() {
         println("Номер посылки: $packageNumber")
