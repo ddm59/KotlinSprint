@@ -1,4 +1,4 @@
-package org.example.lesson17_4
+package org.example.lesson_17
 
 class Package(private val packageNumber: String) {
     private var movementCounter: Int = 0
