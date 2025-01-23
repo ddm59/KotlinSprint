@@ -1,4 +1,4 @@
-package org.example.lesson17_2
+package org.example.lesson_17
 
 class Ship(name: String, var averageSpeed: Double, var homePort: String) {
 
