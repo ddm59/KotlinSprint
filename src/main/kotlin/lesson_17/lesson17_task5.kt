@@ -1,4 +1,4 @@
-package org.example.lesson17_5
+package org.example.lesson_17
 
 class User(private var _login: String, private var _password: String) {
 
