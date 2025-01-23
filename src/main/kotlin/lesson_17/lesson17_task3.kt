@@ -1,4 +1,4 @@
-package org.example.lesson17_3
+package org.example.lesson_17
 
 class Folder(private val folderName: String, private val fileCount: Int, private val isSecret: Boolean) {
 
