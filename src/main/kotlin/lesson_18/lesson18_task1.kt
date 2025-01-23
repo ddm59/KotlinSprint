@@ -14,7 +14,7 @@ class Order(val orderNumber: String) {
 
 fun main() {
     val singleItemOrder = Order("1001")
-    singleItemOrder.printOrderInfo("Ноутбук")
+    singleItemOrder.printOrderInfo("Laptop")
 
     val multipleItemsOrder = Order("1002")
     multipleItemsOrder.printOrderInfo(listOf("Чехол", "Мышка", "Коврик"))
