@@ -20,7 +20,6 @@ fun main() {
 
     val rectangularBox = RectangularBox(2.0, 3.0, 4.0)
     val cube = Cube(3.0)
-
     val boxes: List<Box> = listOf(rectangularBox, cube)
 
     boxes.forEach { box ->
