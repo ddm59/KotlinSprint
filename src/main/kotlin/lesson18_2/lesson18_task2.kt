@@ -1,37 +1,37 @@
 package org.example.lesson18_2
 
-import kotlin.random.Random
+
 
 abstract class Dice(val sides: Int) {
     abstract fun roll()
 }
 
-class D4 : Dice(4) {
+class FourSidedDice : Dice(4) {
     override fun roll() {
-        val result = Random.nextInt(1, sides + 1)
+        val result = (1..sides).random()
         println("D4 выпала грань: $result")
     }
 }
 
-class D6 : Dice(6) {
+class SixSidedDice : Dice(6) {
     override fun roll() {
-        val result = Random.nextInt(1, sides + 1)
+        val result = (1..sides).random()
         println("D6 выпала грань: $result")
     }
 }
 
-class D8 : Dice(8) {
+class EightSidedDice : Dice(8) {
     override fun roll() {
-        val result = Random.nextInt(1, sides + 1)
+        val result = (1..sides).random()
         println("D8 выпала грань: $result")
     }
 }
 
 fun main() {
 
-    val dice4 = D4()
-    val dice6 = D6()
-    val dice8 = D8()
+    val dice4 = FourSidedDice()
+    val dice6 = SixSidedDice()
+    val dice8 = EightSidedDice()
 
     val diceList: List<Dice> = listOf(dice4, dice6, dice8)
     diceList.forEach{it.roll()}
