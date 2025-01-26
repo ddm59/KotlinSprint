@@ -1,4 +1,4 @@
-package org.example.lesson19_5
+package org.example.lesson_19
 
 enum class Gender(val description: String) {
     MALE("Мужской"),
