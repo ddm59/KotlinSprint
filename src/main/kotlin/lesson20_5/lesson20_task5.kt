@@ -17,7 +17,6 @@ class Robot {
     }
 
     fun say() {
-        // Выбираем случайную фразу и применяем модификатор
         val phrase = phrases[phrases.indices.random()]
         println(speechModifier(phrase))
     }
