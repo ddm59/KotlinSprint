@@ -1,4 +1,4 @@
-package org.example.lesson19_2
+package org.example.lesson_19
 
 enum class Category(private val userFriendlyName: String) {
     CLOTHING("Одежда"),
