@@ -1,4 +1,4 @@
-package org.example.lesson19_4
+package org.example.lesson_19
 
 enum class Ammo(val damage: Int) {
     ARMOR_PIERCING(5),
