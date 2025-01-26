@@ -1,4 +1,4 @@
-package org.example.lesson18_3
+package org.example.lesson_18
 
 abstract class Pet(val name: String) {
     abstract fun eat()
