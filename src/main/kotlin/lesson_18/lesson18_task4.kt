@@ -1,4 +1,4 @@
-package org.example.lesson18_4
+package org.example.lesson_18
 
 abstract class Box {
     abstract fun surfaceArea(): Double
