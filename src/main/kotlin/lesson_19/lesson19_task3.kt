@@ -1,4 +1,4 @@
-package org.example.lesson19_3
+package org.example.lesson_19
 
 class Spaceship {
 
