@@ -1,4 +1,4 @@
-package org.example.lesson18_5
+package org.example.lesson_18
 
 class Screen {
 
