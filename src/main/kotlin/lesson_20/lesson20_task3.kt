@@ -1,6 +1,7 @@
 package org.example.lesson_20
 
-class Player1(val name: String, val hasKey: Boolean)
+class Player1(val name: String, val hasKey: Boolean) {
+}
 
 fun main() {
 
