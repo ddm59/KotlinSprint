@@ -1,4 +1,4 @@
-package org.example.lesson20_3
+package org.example.lesson_20
 
 class Player(val name: String, val hasKey: Boolean)
 
