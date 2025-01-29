@@ -1,4 +1,4 @@
-package org.example.lesson21_3
+package org.example.lesson_21
 
 class Player(val name: String, var currentHealth: Int, val maxHealth: Int)
 

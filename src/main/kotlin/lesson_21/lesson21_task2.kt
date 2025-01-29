@@ -1,4 +1,4 @@
-package org.example.lesson21_2
+package org.example.lesson_21
 
 fun List<Int>.evenNumbersSum(): Int {
 
