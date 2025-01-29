@@ -1,4 +1,4 @@
-package org.example.lesson20_5
+package org.example.lesson_20
 
 class Robot {
 
