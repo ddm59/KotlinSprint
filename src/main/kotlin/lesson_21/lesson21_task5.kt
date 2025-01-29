@@ -1,4 +1,4 @@
-package org.example.lesson21_5
+package org.example.lesson_21
 
 fun Map<String, Int>.maxCategory(): String? {
 
