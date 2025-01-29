@@ -4,12 +4,12 @@ class Player(val name: String, var currentHealth: Int, val maxHealth: Int)
 
 fun main() {
 
-    val healPotion: (Player) -> Unit = { player: Player ->
+    val healPotion: (Player1) -> Unit = { player: Player1 ->
         player.currentHealth = player.maxHealth
         println("${player.name} полностью вылечен! Текущее здоровье: ${player.currentHealth}")
     }
 
-    val player = Player(name = "Герой", currentHealth = 50, maxHealth = 100)
+    val player = Player1(name = "Герой", currentHealth = 50, maxHealth = 100)
 
     println("До применения зелья: ${player.name} — здоровье: ${player.currentHealth}/${player.maxHealth}")
 
