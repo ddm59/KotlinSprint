@@ -1,9 +1,9 @@
 package org.example.lesson22_4
 
-
-data class MainScreenState(val data: String = "отсутствие данных", val isLoading: Boolean = false)
-
 class MainScreenViewModel {
+
+    data class MainScreenState(val data: String = "отсутствие данных", val isLoading: Boolean = false)
+
     var mainScreenState = MainScreenState()
         private set
 
