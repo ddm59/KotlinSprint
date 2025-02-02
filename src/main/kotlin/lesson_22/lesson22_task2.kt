@@ -1,4 +1,4 @@
-package org.example.lesson22_2
+package org.example.lesson_22
 
 class RegularBookCopy(val title: String, val author: String)
 
