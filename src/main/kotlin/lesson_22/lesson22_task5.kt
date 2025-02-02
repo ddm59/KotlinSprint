@@ -1,4 +1,4 @@
-package org.example.lesson22_5
+package org.example.lesson_22
 
 import java.time.LocalDateTime
 
