@@ -1,4 +1,4 @@
-package org.example.lesson22_4
+package org.example.lesson_22
 
 class MainScreenViewModel {
 
